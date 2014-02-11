@@ -77,10 +77,10 @@ public final class ClassModelHelper {
         final StringBuilder result = new StringBuilder(messageInterface.name());
         switch (messageInterface.getAnnotatedType()) {
             case MESSAGE_BUNDLE:
-                result.append("_$bundle");
+                result.append("_$Bundle");
                 break;
             case MESSAGE_LOGGER:
-                result.append("_$logger");
+                result.append("_$Logger");
                 break;
             default:
                 throw new IllegalArgumentException(String.format("Message interface %s is not a message bundle or message logger.", messageInterface));
